@@ -12,7 +12,8 @@ function wait(ms) {
 btn.addEventListener("click", async ()=>{
 	const text = inputText.value;
 	const delay = Number(delayInput.value);
-message.textContent = text;
+
 	await wait(delay);
+	message.textContent = text;
 	
 });
